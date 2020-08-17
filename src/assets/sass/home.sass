@@ -1,0 +1,191 @@
+
+$org: #f60
+
+
+*
+    font-family: Noto Sans TC,sans-serif
+
+#app
+    width: 100%
+    height: 100vh
+
+.test
+    width: 100vw
+    height: 100vh
+
+.row
+    display: flex
+    flex-wrap: wrap
+
+.formGroup
+    height: 30vh
+    padding: 20px
+
+    .form
+        // padding: 1.2rem
+
+.left
+    height: 100%
+
+.formTitle
+    font-size: 28px
+    color: $org
+    letter-spacing: 2px
+    font-weight: 900
+    margin-bottom: 15px
+    padding: 1rem
+
+.formSelect
+    background-color: $org
+    border: none
+    color: #000
+    font-size: 1.5rem
+    font-weight: 800
+
+    width: 100%
+    height: calc(1.5em + .75rem + 2px)
+    padding: .375rem .75rem
+    font-weight: 400
+    line-height: 1.5
+
+    border-radius: .5rem
+
+.form
+    option
+        text-transform: none
+        font-weight: normal
+        display: block
+        white-space: pre
+        min-height: 1.2em
+        padding: 0px 2px 1px
+        
+
+.formText
+    color: $org
+    margin: 0
+    letter-spacing: 2px
+    font-size: 16px
+    font-weight: 300
+    text-align: center
+    margin-top: 16px
+    // padding: 1rem
+    
+.storeData
+    width: 100%
+    max-height: 60%
+    overflow: auto
+    box-sizing: border-box
+    padding-top: 0
+    padding: 0 25px
+
+
+.storeGroup
+
+    box-sizing: border-box
+
+.storeData, .storeGroup
+    justify-content: space-around;
+
+.store
+    box-sizing: border-box
+    border: 2px solid $org
+    border-radius: 10px
+    margin: 1rem
+    padding: .8rem 1.2rem
+    transition: .5s
+    cursor: pointer
+    
+    &:hover
+        box-shadow: 0 0 10px #f60;
+        transform: translateY(-5px)
+
+        .fa-angle-double-right
+            transform: translatex(5px)
+
+    .fa-angle-double-right
+        transition: .5s
+
+    .storeName
+        color: $org
+        font-size: 1.5rem
+        font-weight: 300
+        letter-spacing: 2px
+        margin-bottom: 5px
+        pointer-events: none
+        transition: .5s
+        svg
+            font-size: 1.2rem   
+
+    .storeAddress, .storePhone, .storeUpdated
+        pointer-events: none
+        font-weight: 300
+        letter-spacing: 1px
+        font-size: 1rem
+        color: $org
+        svg
+            font-size: 1rem
+    .storeAddress
+        margin-bottom: 0
+    .storeUpdated
+        margin-top: 10px
+        margin-bottom: 0
+        text-align: center
+
+.storeData .store
+    .adultMask, .childMask
+        width: 100%
+        height: 100px
+        pointer-events: none
+        background-color: $org
+        color: #000
+        border-radius: 10px
+        text-align: center
+        padding: .8rem
+
+        p
+            padding-bottom: 3px
+            margin: 0
+            border-bottom: 2px solid #000
+            font-weight: 800
+        h4
+            margin-top: 12px
+            font-size: 1.8rem
+            font-weight: 800
+        span
+            font-size: 1rem
+            font-weight: 500
+            margin-left: 5px
+
+#mapContainer
+    height: 100%
+    width: 100%
+    display: flex
+    // flex-direction: row
+    // justify-content: center
+    // align-items: center
+    transition: .7s
+    // margin-top: 25px
+
+#map
+    width: 100%
+    height: 95vh
+    margin-top: 10px
+
+.storeData::-webkit-scrollbar-track
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: transparent
+
+.storeData::-webkit-scrollbar
+
+    width: 10px;
+    background-color: transparent
+
+.storeData::-webkit-scrollbar-thumb
+
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: $org;
+
+
